@@ -1,0 +1,106 @@
+.body{
+ min-height: 750px;
+ max-height: none;
+}
+@media screen and (min-height:750px){
+  cenario{
+    height: 1500px;
+  }
+}
+.cenario{
+  position: relative;
+  overflow: hidden;
+  height: 750px;
+  border: 3px inset black;
+  background: linear-gradient(-90deg,#75D3CFB8 70%,#B9F0EEB8 10%,#DAEAE9B8 10%,#44E212B8 30%);
+  }
+.points,.record{
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: bold;
+  position: absolute;
+  display: flex;
+  top: 50px;
+  right: 0px;
+  transform: rotate(90deg);
+  
+}
+.record{
+  top:650px;
+  
+}
+.jogador{
+  background: url('/giphy.gif');
+  background-size: 100%;
+  transform: rotate(90deg);
+  height:100px;
+  width:100px;
+  position: absolute;
+  left:110px;
+  top:40px;
+}
+.jupp{
+  animation: jup 1s linear;
+}
+@keyframes jup{
+  0%{left:110px}
+  20%{left:180px}
+  40%{left:230px}
+  60%{left:230px}
+  80%{left:180px}
+  100%{left: 110px}
+}
+.obj,.obj2{
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top:200px;
+  left:110px;
+  background:url('/Fireball-Globe-Transparent-PNG.png')no-repeat;
+  background-size: 100%;
+  border-radius: 100%;
+  animation: objj 2.5s infinite ease-in;
+}
+.obj2{
+  animation: objj2 1.5s infinite ease-in;
+}
+@keyframes objj2{
+  from{left:700px}
+  to{left:-100px}
+}
+@keyframes objj{
+  from{top:800px}
+  to{top:-100px}
+}
+
+.move{
+  position: absolute;
+  top:10px;
+  margin: 20px;
+  left: 20px;
+  display: grid;
+  margin-left: 5px;
+}
+.esquerda,.direita{
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-left: 0px;
+  background: linear-gradient(#E37F1A,#E34B1A,#E3341A)
+}
+.jump{
+  position: absolute;
+  bottom: 10px;
+  margin: 20px;
+  margin-left: 5px;
+  left:20px;
+}
+.pular{
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+  margin-left: 0px;
+  border-radius: 50%;
+  background: linear-gradient(#E37F1A,#E34B1A,#E3341A)
+}
